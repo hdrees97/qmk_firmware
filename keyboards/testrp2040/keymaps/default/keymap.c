@@ -14,31 +14,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+//Encoder
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (clockwise) {
-        tap_code(KC_A); // Lautstärke erhöhen
+        tap_code(KC_VOLU); // Lautstärke erhöhen
     } else {
-        tap_code(KC_A); // Lautstärke verringern
+        tap_code(KC_VOLD); // Lautstärke verringern
     }
     return true;
 }
-
-/*
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) {
-        if (clockwise) {
-            tap_code(KC_VOLU);
-        } else {
-            tap_code(KC_VOLD);
-        }
-    }
-    else if (index == 1) {
-        if (clockwise) {
-            tap_code(KC_PGDN);
-        } else {
-            tap_code(KC_PGUP);
-        }
-    }
-    return false;
-}
-*/
