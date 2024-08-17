@@ -6,3 +6,10 @@
 #define ENCODERS_PAD_A { GP0 }
 #define ENCODERS_PAD_B { GP1 }
 
+
+
+
+#define WS2812_DI_PIN GP2 // Pin for the LEDs here arent brackets allowed
+
+#define RGBLIGHT_LED_COUNT 20 // Number of LEDs
+
